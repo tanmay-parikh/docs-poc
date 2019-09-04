@@ -1,5 +1,5 @@
-T-Mobile PoP Token Builder
-==========================
+PoP Token Builder
+=================
 
 Build/Install PoP Token Builder Library
 ---------------------------------------
@@ -13,7 +13,7 @@ Execute following command to build the PoP token builder library.
 Implementation Details
 ----------------------
 
-The T-Mobile PoP Token Builder library follows the following logic for
+The PoP Token Builder library follows the following logic for
 creating the PoP token.
 
 -  Sets up the edts (external data to sign) / ehts (external headers to
@@ -40,7 +40,7 @@ Determining the ehts Key Name
    ``PopEhtsKey.URI.keyName()``. For “uri” ehts value, the URI and query
    string of the request URL should be put in the ehts key-value map.
    Example: If the URL is
-   ``https://api.t-mobile.com/commerce/v1/orders?account-number=0000000000``
+   ``https://api.com/commerce/v1/orders?account-number=0000000000``
    then only ``/commerce/v1/orders?account-number=0000000000`` should be
    used as ehts value. The query parameter values part of “uri” ehts
    value should not be in URL encoded format.
